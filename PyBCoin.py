@@ -1,5 +1,5 @@
 # ------------------------------------------------------------- #
-#                                         PyCoinAPI             #
+#                                         PyBCoin               #
 #                                       Github:@WeDias          #
 #                                    Licença: MIT License       #
 #                                Copyright © 2020 Wesley Dias   #
@@ -57,6 +57,5 @@ def buscar_dados(criptomoeda):
     preco_btc = preco_btc.split()
     preco_btc = preco_btc[0]
     preco_btc = float(remover_virgulas(preco_btc))
-    retornar = {'rank': rank_mercado, 'nome': nome, 'preco': preco, 'variação': variacao, 'preco_btc': preco_btc}
-
-    return retornar
+    
+    return {'rank': rank_mercado, 'nome': nome, 'preco': preco, 'variação': variacao, 'preco_btc': preco_btc}
